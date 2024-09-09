@@ -8,7 +8,6 @@ import re
 import time
 import requests
 from urllib.parse import urlencode, quote
-import execjs
 import tempfile
 import subprocess
 
