@@ -8,7 +8,7 @@
 
 const $ = new Env('饿了么夺宝');
 const axios = require('axios');
-const elmSignUrl = process.env.signhost ? process.env.signhost : "http://39.96.174.152:9922/api/getXSign";
+const elmSignUrl = process.env.signhost ? process.env.signhost : "http://bj.frp.one:17151/getXSign";
 let cookiesArr = []
 
 if (process.env.elmck) {
