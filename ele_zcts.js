@@ -230,10 +230,14 @@ async function _0xf7ccac(_0x1e0e27, _0x54f7f5) {
     });
 }
 async function _0x378f6c(_0x429356, _0x16a72b) {
-
-  await sendNotify("饿了么资产推送", _0x16a72b, {
+    const _0x220a27 = getCookieMap(_0x429356);
+    if (!_0x220a27.has("wxUid")) {
+        console.log("没有获取到推送 uid，不推送消息\n");
+    } else {
+        await sendNotify("饿了么资产推送", _0x16a72b, {
             uid: _0x220a27.get("wxUid")
         });
+    }
 }
 async function _0x163ae7() {
     await validateCarmeWithType(_0x46e8ae, 1);
@@ -272,7 +276,7 @@ async function _0x163ae7() {
             _0x30b429 = _0x55733f;
         }
         var _0x4b0682 = _0x55733f
-        //     await _0x2e425a(_0x1e1848);
+        // await _0x2e425a(_0x1e1848);
         // if (!_0x4b0682) {
         //     _0x4b0682 = _0x55733f;
         // }
